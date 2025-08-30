@@ -5,6 +5,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.d.ts', '!**/vendor/**'],
   coverageDirectory: 'coverage',
+
   testEnvironment: 'jsdom',
   jest: {
     preset: 'ts-jest',
@@ -13,7 +14,13 @@ module.exports = {
   },
   transform: {
     '.(ts|tsx)': 'ts-jest',
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(js|jsx)$': 'babel-jest',
   },
+
+  transformIgnorePatterns: [
+    '/node_modules/(?!msw|@bundled-es-modules/statuses)',
+  ],
 
   coveragePathIgnorePatterns: [
     '/node_modules/',
@@ -24,4 +31,5 @@ module.exports = {
     'setupTests.ts',
     'index.tsx',
   ],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 };
