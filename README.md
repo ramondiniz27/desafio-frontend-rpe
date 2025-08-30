@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Desafio Frontend RPE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um projeto React desenvolvido com TypeScript, Tailwind CSS e componentes reutilizáveis para exibição de cartões de crédito e ofertas.
 
-## Available Scripts
+## 🚀 Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React 18** - Biblioteca para construção de interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática, assim aumentando a confiabilidade no codigo
+- **Tailwind CSS** - Framework CSS utilitário. Usado para facilitar e acelerar a criação de novas telas e componentes
+- **Material Tailwind** - Componentes UI baseados em Material Design
+- **MSW (Mock Service Worker)** - Mock de APIs utilizado para simular uma chamada de API REST
+- **React Router** - Roteamento para aplicações React. Conseguindo assim uma melhor navegabilidade entre paginas no projeto
+- **Jest & Testing Library** - Frameworks para teste de tela e unitarios. validando o codigo feito e assegurando novos componentes e ajustes
+- **Storybook** - Ferramenta para a criação de documentação e design system no projeto. facilitando o uso de componentes
+- **ESLint** - Linter para qualidade de código
+- **Prettier** - Ajuda na padronização e formatação do codigo
 
-### `npm start`
+## 📋 Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js (versão 20.x ou superior)
+- Yarn ou npm
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🔧 Instalação
 
-### `npm test`
+1. Instale as dependencias do projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+yarn ou npm install
+```
 
-### `npm run build`
+## ⚡ Rodando o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Para inicializar o projeto em desenvolvimento rode:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn start ou npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Para rodar o storybook rode:
 
-### `npm run eject`
+```bash
+yarn storybook ou npm run storybook
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Para rodar os testes rode:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn test ou npm run test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Para realizar a verificação com o eslint rode:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+yarn lint ou npm run lint
+```
 
-## Learn More
+4. Para formatar o codigo de todo o projeto com o prettier rode:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn format ou npm run format
+```

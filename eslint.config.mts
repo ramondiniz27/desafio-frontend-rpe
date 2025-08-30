@@ -27,6 +27,8 @@ export default [
       'coverage/**',
       '.storybook/**',
       '**/*.stories.@(js|jsx|mjs|ts|tsx)',
+      'src/index.tsx',
+      'src/mocks/browser.ts',
     ],
     languageOptions: {
       globals: {
@@ -53,7 +55,12 @@ export default [
   },
   {
     files: ['src/**/*.{ts,tsx}'],
-    ignores: ['**/*.test.{ts,tsx}', '**/__tests__/**'],
+    ignores: [
+      '**/*.test.{ts,tsx}',
+      '**/__tests__/**',
+      'src/index.tsx',
+      'src/mocks/browser.ts',
+    ],
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
