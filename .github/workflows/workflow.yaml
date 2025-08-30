@@ -1,0 +1,21 @@
+name: Continuos Integration
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set Node.JS
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.x'
+      - name: run install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Running lint format
+        run: yarn format
+      - name: Running lint
+        run: yarn lint
+      - name: Running unit tests
+        run: yarn ci-test
